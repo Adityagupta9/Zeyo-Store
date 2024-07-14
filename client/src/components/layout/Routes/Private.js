@@ -2,7 +2,7 @@ import { useEffect,useState} from "react"
 import { useAuth } from "../../../context/auth"
 import axios from "axios";
 import { Outlet } from "react-router-dom";
-import Spinner from "../../../pages/Spinner";
+import Spinner2 from "../../../pages/Spinner";
 
 
 const PrivateRoute = ()=>{
@@ -10,7 +10,7 @@ const PrivateRoute = ()=>{
     const [auth]= useAuth();
     useEffect(()=>{
         const AuthCheck = async ()=>{
-            const res = await axios.get("http://localhost:8080/api/v1/auth/user-auth");
+            const res = await axios.get("https://valiant-sore-tennis.glitch.me/api/v1/auth/user-auth");
             if(res.data.ok){
                 setOk(true)
             }
@@ -23,6 +23,6 @@ const PrivateRoute = ()=>{
     }
     },[auth?.token])
 
-    return ok? <Outlet/> : <Spinner/>;
+    return ok? <Outlet/> : <Spinner2/>;
 }
 export default PrivateRoute
