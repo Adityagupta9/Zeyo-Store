@@ -1,0 +1,131 @@
+.admin-dashboard-container {
+  margin-top: 50px;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+  }
+  
+  .create-Product {
+    border-radius: 5px;
+    width: 400px;
+    background-color:rgb(245, 245, 245);
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.137);
+  }
+  .select-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .up-photo {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .photo-inp {
+    color: azure;
+    background-color: #0a192f;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .photo-inp::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    border-radius: 5px; /* Adjust this if you want rounded corners */
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .photo-inp:hover::before {
+    opacity: 1;
+  }
+  .photo-inp:hover{
+    background-color: #142d53;
+  }
+ 
+  .photo-container img{
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.207);
+  }
+  .inp-details{
+    display: flex;
+    flex-direction: column;
+  }
+  .inp-details input{
+    border: 0.5px solid rgba(0, 0, 0, 0.063);
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    margin: 15px;
+  }
+  .inp-details input:focus{
+    outline: none;
+  }
+  .inp-details textarea:focus{
+    outline: none;
+  }
+  /* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inp-details textarea {
+    position: relative;
+    left: 15px;
+    border: 0.5px solid rgba(0, 0, 0, 0.093);
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 70px;
+    resize: none;
+    margin: 15px 0px;
+}
+.create-product-btn{
+  margin: 14px ;
+  margin-bottom: 30px;
+  padding: 10px 15px ;
+  border-radius: 5px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: #0a192f;
+  transition: 0.3s;
+}
+.create-product-btn:hover{
+  background-color: #13305d;
+  transform: scale(1.01);
+}
+.select-shipping{
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .create-Product{
+       width: 350px;
+    }
+    .inp-details textarea {
+        position: relative;
+        left: 14px;
+    } 
+}

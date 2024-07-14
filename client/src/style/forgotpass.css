@@ -1,0 +1,101 @@
+.forgot-form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 38%;
+    width: 360px;
+    height: fit-content;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 40px 0px;
+    border: 0.5px solid #672bd72f;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.281);
+}
+.forgot-logo{
+    font-family: "Playwrite AU VIC", cursive;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(21, 11, 63);
+    font-size: 20px;
+}
+h4{
+    color: #0a192f;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+.forgot-form input{
+    position: relative;
+    left: 20px;
+    background-color: #ffffff;
+    color: rgb(95, 95, 95);
+    margin: 4px;
+    border: 1px solid #00000051;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 290px;
+}
+.forgot-form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.385);
+}
+.forgot-form button{
+    margin-top: 15px;
+    background-color: #1c0b3d;
+    color: white;
+    position: relative;
+    left: 20%;
+    width: 60%;
+    padding: 12px 8px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+    
+}
+.forgot-form button:hover{
+    background-color: #a588db;
+}
+.forgot-form p{
+    color: #1a004b;
+}
+.forgot-form p span a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.forgot-form #show-icon{
+    position: relative;
+    left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .forgot-form{
+        position: relative;
+        left: 15px;
+        width: 80%;
+    }
+    .forgot-form input{
+        position: relative;
+        left: 5px;
+        width: 265px;
+    }
+    .phone-inp{
+        position: relative;
+        left: 4px;
+    }
+   
+    .forgot-form #show-icon{
+        position: relative;
+        left: 6px;
+    }
+    textarea{
+        position: relative;
+        left: 0px;
+        width: 89%;
+    }
+}

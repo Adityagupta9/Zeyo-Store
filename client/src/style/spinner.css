@@ -1,0 +1,23 @@
+/* spinner.css */
+
+.spinner-container {
+  position: relative;
+  bottom: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    
+  }
+  .spinner-container p{
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: rgb(17, 8, 51);
+    color: aliceblue;
+    margin: 5px;
+    padding: 8px 14px;
+  }
+
+  

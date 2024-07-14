@@ -1,0 +1,59 @@
+/* Ensure the body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Main wrapper to hold all content and the footer */
+#root, .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1;
+}
+
+#footer {
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: rgba(19, 10, 46, 0.321);
+}
+
+.about {
+    margin: 15px;
+}
+
+.footer-link {
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        font-size: 10px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #footer p {
+        margin-left: 5px;
+        margin-top: 4.5px;
+    }
+
+    .about {
+        margin-left: 5px;
+    }
+}

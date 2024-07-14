@@ -1,0 +1,42 @@
+.orderspage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures it takes the full viewport height */
+    flex-direction: column;
+  }
+  .order-container {
+    width: 100%; /* Adjust width as needed */
+    margin-top: 20px;
+  }
+  
+  .order-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-card th,
+  .order-card td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .order-card th {
+    background-color: #0b0b2a;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .order-card tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

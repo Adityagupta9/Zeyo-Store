@@ -1,0 +1,33 @@
+/* ./style/pagenotfound.css */
+.pagenotfound-container {
+    text-align: center;
+    padding: 50px;
+    min-height: 442px;
+  }
+  
+  .pagenotfound-title {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .pagenotfound-message {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .pagenotfound-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1f1f41;
+    padding: 15px 20px;
+    border-radius: 55px;
+    font-size: 1em;
+    transition: 0.3s;
+  }
+  
+  .pagenotfound-link:hover {
+    background-color: #7f799a;
+  }
+  

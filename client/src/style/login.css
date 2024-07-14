@@ -1,0 +1,101 @@
+#login-form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 38%;
+    width: 380px;
+    height: fit-content;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 40px 0px;
+    border: 0.5px solid #5c2bd72f;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.281);
+}
+.login-logo{
+    font-family: "Playwrite AU VIC", cursive;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(21, 11, 63);
+    font-size: 20px;
+}
+h4{
+    color: #0a192f;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+#login-form input{
+    position: relative;
+    left: 20px;
+    background-color: #ffffff;
+    color: rgb(95, 95, 95);
+    margin: 4px;
+    border: 1px solid #00000051;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 290px;
+}
+#login-form input:focus{
+    outline: none;
+}
+
+#login-form button{
+    background-color: #0a192f;
+    color: white;
+    position: relative;
+    left: 20%;
+    width: 60%;
+    padding: 12px 8px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+    
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.385);
+}
+#login-form button:hover{
+    background-color: #173461;
+}
+#login-form p{
+    color: #0a192f;
+}
+#login-form p span a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.show-icon{
+    position: relative;
+    left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #login-form{
+        position: relative;
+        left: 15px;
+        width: 80%;
+    }
+    #login-form input{
+        position: relative;
+        left: 5px;
+        width: 265px;
+    }
+    .phone-inp{
+        position: relative;
+        left: 4px;
+    }
+   
+    #login-form .show-icon{
+        position: relative;
+        left: 3px;
+    }
+    textarea{
+        position: relative;
+        left: 0px;
+        width: 89%;
+    }
+}

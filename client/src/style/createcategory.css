@@ -1,0 +1,47 @@
+.category-table {
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .category-table table {
+    width: 600px;
+    border-collapse: separate;
+    border-spacing: 0; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  .category-table th, .category-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .category-table th {
+    background-color: #aa69ff;
+    color: #ffffff;
+  }
+  
+  .category-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .action-btn{
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  .action-btn:hover{
+    transform: scale(1.3);
+  }
+  @media only screen and (max-width: 600px) {
+    .category-table {
+      position: relative;
+      left: 7%;
+    }
+    .category-table table{
+      width: 350px;
+    }
+  }

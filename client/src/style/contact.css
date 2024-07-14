@@ -1,0 +1,105 @@
+#Contact {
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    margin-bottom: 30px;
+    min-height: 512px;
+  }
+  
+  .contact-form {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    left: 27%;
+    top: 20px;
+    padding: 35px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(4, 4, 39, 0.178);
+    height: auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form h2 {
+    color: rgb(55, 55, 75);
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  
+  .name-email {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contactinput {
+    color: white;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(55, 55, 75);
+    outline: none;
+  }
+  
+  .contact-input {
+    color: white;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box;
+    background-color: rgb(55, 55, 75);
+    resize: none; 
+    outline: none;
+  }
+  ::placeholder{
+    color: rgb(204, 204, 204);
+  }
+  
+  #input-subject {
+    margin-bottom: 15px;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(55, 55, 75);
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    border: 2px solid rgba(255, 255, 255, 0.827);
+    transition: 0.2s;
+  }
+  
+  .contact-button:hover {
+    background-color: rgb(23, 23, 63);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #head3 {
+      margin-left: 3%;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  
+    .contact-form {
+      left: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .name-email {
+      flex-direction: column;
+    }
+  
+    .contact-button {
+      width: 40%;
+    }
+  }
+  

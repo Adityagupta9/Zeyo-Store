@@ -1,0 +1,17 @@
+.search-product-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.search-product-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.search-product-page h4{
+    color: rgba(13, 13, 51, 0.605);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
