@@ -7,7 +7,7 @@
 }
 
 .search-prod {
-  margin-top: 45px;
+  margin-top: 50px;
   z-index: 7000;
   width: 100%; /* Ensure it takes full width */
   display: flex;

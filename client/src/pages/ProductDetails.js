@@ -72,7 +72,7 @@ const ProductDetails = () => {
         <p>{similarprod?.length<1?'No similar Product':`${similarprod?.length} similar product`}</p>
       <div className="similar-product">
         {similarprod.map((s)=>(
-          <div className="product-card" key={s._id}>
+          <div onClick={()=>navigate(`/product/${s.slug}`)} className="product-card" key={s._id}>
             {s.bestSale && (
                     <p className='prod-bestSale'>Best Sale</p>
                   )}
@@ -81,7 +81,7 @@ const ProductDetails = () => {
                   </div>
                 <div className="product-details">
                     <p className='prod-name'>{s.name}</p>
-                    <p className='prod-desc'>{s.description.substring(0,40)}</p>
+                    <p className='prod-desc'>{s.description}</p>
                     <p className='prod-price'>₹ {s.price}</p>
                     <div className="left-shipp">
                     <p className='prod-quantity'>Only {s.quantity} left</p>
@@ -89,7 +89,7 @@ const ProductDetails = () => {
                     <p className='prod-shipping'>Free Shipping</p>
                     )}
                     </div>
-                    <button onClick={()=>navigate(`/product/${s.slug}`)} className='prod-see-btn'>See More</button>
+                    
                 </div>
           </div>
         ))}

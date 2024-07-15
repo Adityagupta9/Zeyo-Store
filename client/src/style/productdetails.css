@@ -103,10 +103,22 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 20px;
   }
   .similar-product{
     text-align:left;
     justify-content: center;
     display: flex;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .product-details-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .product-info {
+      width: 100%;
+      text-align: left;
+      margin-left: 10px;
+    }
   }

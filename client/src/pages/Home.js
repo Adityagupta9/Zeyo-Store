@@ -105,6 +105,7 @@ const Home = () => {
       <div className="search-prod">
         <Search />
       </div>
+      
       <div id='home'>
         <button className="filter-toggle-btn" onClick={toggleFilter}>
           {filterActive ? <IoIosClose /> : <RiFilter3Fill />}
@@ -134,6 +135,7 @@ const Home = () => {
               ref={products.length === index + 1 ? lastProductElementRef : null}
               className="product-card"
               key={p._id}
+              onClick={() => navigate(`/product/${p.slug}`)}
             >
               {p.bestSale && (
                 <p className='prod-bestSale'>Best Sale</p>
@@ -151,7 +153,7 @@ const Home = () => {
                     <p className='prod-shipping'>Free Shipping</p>
                   )}
                 </div>
-                <button onClick={() => navigate(`/product/${p.slug}`)} className='prod-see-btn'>See More</button>
+               
               </div>
             </div>
           ))}
