@@ -88,9 +88,9 @@
   .admin-card{
     position: relative;
     top: 100px;
-    left: 30px;
+    left: 20px;
     justify-content: center;
-    min-width: 400px;
+    min-width: 350px;
   }
   .menu-toggle-button-close, .menu-toggle-button-open {
     top: 100px;
