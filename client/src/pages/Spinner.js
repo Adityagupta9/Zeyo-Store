@@ -19,7 +19,7 @@ const Spinner = ({path="/login",rediMessage="Please Login"}) => {
     },[count,navigate,location,path])
   return (
     <div className="spinner-container">
-      <BarLoader className="dash-spinner" color={"#00074c"} size={500} width={400} />
+      <BarLoader className="dash-spinner" color={"#00074c"} size={400} width={400} />
     </div>
   );
 };
