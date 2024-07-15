@@ -165,8 +165,8 @@ p.prod-shipping{
   
   .product-card img {
     max-width: 100%;
-    max-height: 120px;
-    object-fit: cover;
+    max-height: 110px;
+    object-fit:cover;
   }
   
   .product-details {

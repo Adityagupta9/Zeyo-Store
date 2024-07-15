@@ -7,7 +7,7 @@ const Spinner = ({path="/login",rediMessage="Please Login"}) => {
     const navigate = useNavigate()
     const location = useLocation();
 
-    const [count,setCount] = useState(4)
+    const [count,setCount] = useState(10)
     useEffect(()=>{
         const interval = setInterval(()=>{
             setCount((preValue)=>--preValue)

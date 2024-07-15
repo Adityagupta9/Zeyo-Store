@@ -52,8 +52,8 @@ const ProductDetails = () => {
             />
           </div>
           <div className="purchase-button">
-            <button onClick={()=>{setCart([...cart,product]);localStorage.setItem("cart",JSON.stringify([...cart,product])) ;setTimeout(()=>{toast.success("Item added sucessfully")},500)}} id='buy-now'>Buy Now</button>
-            <button  onClick={()=>{setCart([...cart,product]);localStorage.setItem("cart",JSON.stringify([...cart,product])) ;setTimeout(()=>{toast.success("Item added sucessfully")},500)}} id='add-cart'><FaOpencart/> Add to Cart</button>
+            <button onClick={()=>{setCart([...cart,product]);localStorage.setItem("cart",JSON.stringify([...cart,product])) ;setTimeout(()=>{toast.success("Item added sucessfully")},500) ;navigate("/cart") }} id='buy-now'>Buy Now</button>
+            <button   onClick={()=>{setCart([...cart,product]);localStorage.setItem("cart",JSON.stringify([...cart,product])) ;setTimeout(()=>{toast.success("Item added sucessfully")},500) }} id='add-cart'><FaOpencart/> Add to Cart</button>
           </div>
         </div>
         <div className="product-info">

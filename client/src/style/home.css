@@ -20,7 +20,7 @@
   left: 0;
   width: 250px; /* Adjust the width as needed */
   height: 100%;
-  background-color: #f0f0f07e;
+  background-color: #f0f0f0d1;
   backdrop-filter: blur(2px);
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.166);
   transform: translateX(-100%);

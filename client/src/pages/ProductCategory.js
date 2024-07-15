@@ -37,7 +37,7 @@ const ProductCategory = () => {
             </div>
             <div className="product-category-details">
               <div className="product-category-name">{p.name}</div>
-              <div className="product-category-description">{p.description}</div>
+              <div className="product-category-description">{p.description.substring(0,60)}</div>
               <div className="product-category-price">₹{p.price}</div>
               <div className="product-category-quantity">Available: {p.quantity}</div>
               <button onClick={()=>navigate(`/product/${p.slug}`)} className='product-category-see'>See More</button>
