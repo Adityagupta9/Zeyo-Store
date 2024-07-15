@@ -89,7 +89,26 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 0.5px solid rgb(7, 7, 30);
     padding: 7px 13px;
-    background-color: transparent;
-    color: rgb(11, 11, 40);
+    background-color: rgb(11, 11, 44);
+    color: rgb(255, 255, 255);
     border-radius: 3px;
+  }
+
+  .make-payment {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0.5px solid rgb(7, 7, 30);
+    padding: 13px 15px;
+    background-color: rgb(11, 11, 44);
+    color: rgb(255, 255, 255);
+    border-radius: 23px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .cart-item-img img {
+      width: 200px;
+      height: 100px;
+      object-fit:contain;
+      border-radius: 5px;
+    }
+    
   }

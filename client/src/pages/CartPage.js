@@ -9,7 +9,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { FaOpencart } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
-
+import { MdPayment } from "react-icons/md";
 const CartPage = () => {
   const navigate = useNavigate();
   const [auth, setAuth] = useAuth();
@@ -159,7 +159,7 @@ const CartPage = () => {
               onClick={handelPayment}
               disabled={!instance || loading || !auth?.user?.address}
             >
-              {loading ? 'Processing...' : 'Make Payment'}
+            <MdPayment/>  {loading ? 'Processing...' : 'Make Payment'}
             </button>
           </div>
         </div>

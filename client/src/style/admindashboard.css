@@ -39,7 +39,7 @@
   left: -260px; /* Initially hide the menu off the screen */
   width: 230px; /* Increase the width of the menu */
   height: 100%;
-  background-color: rgba(25, 17, 47, 0.114); /* Blur effect */
+  background-color: rgba(25, 17, 47, 0.084); /* Blur effect */
   padding: 20px;
   transition: left 0.3s ease;
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.292);
@@ -52,11 +52,11 @@
 }
 
 .admin-content {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex: 1;
-  width: 500px;
+  width: 100%; /* Adjusted to take full width */
   padding: 20px;
   background-color: #fff;
   transition: margin-left 0.3s ease;
@@ -64,9 +64,10 @@
 }
 
 .admin-card {
+  margin-top: 80px ;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f4f4f4;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   min-width: 700px;
@@ -84,13 +85,10 @@
 .admin-details span {
   font-weight: bold;
 }
+
 @media only screen and (max-width: 600px) {
-  .admin-card{
-    position: relative;
-    top: 100px;
-    left: 20px;
-    justify-content: center;
-    min-width: 350px;
+  .admin-card {
+    min-width: 95%; /* Adjusted to fit better on small screens */
   }
   .menu-toggle-button-close, .menu-toggle-button-open {
     top: 100px;
