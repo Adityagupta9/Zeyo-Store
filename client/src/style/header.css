@@ -124,13 +124,13 @@
       position: relative;
       left: -5%;
       font-family: "Playwrite AU VIC", cursive;
-      font-size: 15px;
+      font-size: 0px;
     }
     .nav-list li {
       margin-left: 0px;
     }
     .nav-text {
-      font-size: 12px;
+      font-size: 15px;
       font-family: "Poppins", sans-serif;
       color: rgb(64, 64, 64);
       text-decoration: none;
@@ -138,5 +138,9 @@
       padding-bottom: 5px;
       transition: 0.5s;
       margin: 8px;
+    }
+    .nav-list li {
+      margin-left: 0px;
+      margin-top: 13px ;
     }
   }

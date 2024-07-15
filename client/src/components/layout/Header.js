@@ -67,7 +67,7 @@ const Header = () => {
   return (
     <>
       <nav className={`nav-bar ${navVisible ? '' : 'hidden'}`}>
-        <p className='store-logo'><CgShoppingBag className='logo' />Zeyo Store</p>
+        <p className='store-logo'><CgShoppingBag className='logo' />ZeyoStore</p>
         <ul className="nav-list">
           <li><NavLink to="/" className={({ isActive }) => (isActive ? "nav-text active" : "nav-text")}>Home</NavLink></li>
           <li className="dropdown">

@@ -1,7 +1,11 @@
+.signin-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
 .signin-form{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    left: 38%;
     width: 380px;
     height: fit-content;
     background-color: #ffffff;
@@ -123,19 +127,17 @@ input[type="date"] {
   
 @media only screen and (max-width: 600px) {
     .signin-form{
-        position: relative;
-        left: 15px;
-        width: 80%;
+        width: 92%;
     }
     
     .signin-form input{
         position: relative;
-        left: 00px;
-        width: 280px;
+        left: -10px;
+        width: 300px;
     }
     .phone-inp{
         position: relative;
-        left: 4px;
+        left: 0px;
     }
     #pass{
         width: 250px;
@@ -146,7 +148,18 @@ input[type="date"] {
     }
     textarea{
         position: relative;
-        left: 0px;
+        left: 10px;
         width: 89%;
+    }
+    #signin-address{
+        position: relative;
+        left: -10px;
+        margin: 5px;
+        padding: 10px;
+        width: 298px;
+        height: 60px;
+        resize: none;
+        border-radius: 5px;
+        border: 1px solid #00000051;
     }
 }

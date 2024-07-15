@@ -50,6 +50,7 @@ const Login = () => {
 
     return (
         <Layout>
+        <div className="login-page">
             <form action="" id='login-form' onSubmit={handleSubmit}>
                 <div className="login-logo">Zeyo Store</div>
                 <h4>Login</h4>
@@ -62,6 +63,7 @@ const Login = () => {
                 <p>New user? <span><NavLink to="/signin">Create Account</NavLink></span></p>
                 <p><span><NavLink to="/forgotpassword">Forgot Password</NavLink></span></p>
             </form>
+            </div>
         </Layout>
     );
 };

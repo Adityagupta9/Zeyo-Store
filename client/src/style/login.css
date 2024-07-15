@@ -1,7 +1,11 @@
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 #login-form{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    left: 38%;
     width: 380px;
     height: fit-content;
     background-color: #ffffff;
@@ -75,14 +79,12 @@ h4{
 
 @media only screen and (max-width: 600px) {
     #login-form{
-        position: relative;
-        left: 15px;
-        width: 80%;
+        width: 90%;
     }
     #login-form input{
         position: relative;
-        left: 5px;
-        width: 265px;
+        left: 0px;
+        width: 255px;
     }
     .phone-inp{
         position: relative;

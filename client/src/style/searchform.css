@@ -22,3 +22,10 @@
 #search-product-bar input:focus{
     outline: none;
 }
+@media only screen and (max-width: 600px) {
+    #search-product-bar input{
+        width: 280px;
+        font-size: 17px;
+        padding: 7px;
+    }
+}

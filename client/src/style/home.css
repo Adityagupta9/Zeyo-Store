@@ -82,3 +82,10 @@
 .product-card {
   margin: 5px;
 }
+@media only screen and (max-width: 600px) {
+  .filter-toggle-btn {
+    position: fixed;
+    top: 90px;
+    left: 15px;
+  }
+}

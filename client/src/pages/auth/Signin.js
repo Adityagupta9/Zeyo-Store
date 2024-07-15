@@ -48,6 +48,7 @@ const Signin = () => {
 
   return (
     <Layout title={"Zeyo-Signin"}>
+      <div className="signin-page">
       <form action="" className='signin-form' onSubmit={handleSubmit}>
         <div className="signup-logo">Zeyo Store</div>
         <h4>Sign Up</h4>
@@ -85,6 +86,7 @@ const Signin = () => {
         <p className='signin-terms'>Already have an account? <span><NavLink to="/login">Login</NavLink></span></p>
         <p className='signin-terms'>By signing up you agree to our <span><NavLink to="/policy">Privacy Policy</NavLink></span></p>
       </form>
+      </div>
     </Layout>
   )
 }
