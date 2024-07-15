@@ -16,7 +16,7 @@
 .menu-toggle-button-close, .menu-toggle-button-open {
   top: 80px; /* Adjust this to ensure the button is below the header */
   left: 20px;
-  background-color: #0f0e2e;
+  background-color: #0f0c1c44;
   color: white;
   border: none;
   border-radius: 50%;
@@ -39,7 +39,7 @@
   left: -260px; /* Initially hide the menu off the screen */
   width: 230px; /* Increase the width of the menu */
   height: 100%;
-  background-color: rgba(19, 16, 55, 0.108); /* Blur effect */
+  background-color: rgba(25, 17, 47, 0.114); /* Blur effect */
   padding: 20px;
   transition: left 0.3s ease;
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.292);
@@ -79,8 +79,6 @@
   justify-content: space-between;
   font-size: 16px;
   color: #333;
-  max-width: 400px;
-  flex-wrap: wrap;
 }
 
 .admin-details span {
@@ -89,7 +87,7 @@
 @media only screen and (max-width: 600px) {
   .admin-card{
     position: relative;
-    top: 100PX;
+    top: 100px;
     left: 30px;
     justify-content: center;
     min-width: 400px;
