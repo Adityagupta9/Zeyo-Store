@@ -40,6 +40,9 @@ const Header = () => {
 
   const toggleCategoryDropdown = () => {
     setCategoryDropdownOpen(!categoryDropdownOpen);
+    setTimeout(() => {
+      setCategoryDropdownOpen(false);
+    }, 3000);
   };
 
   const getFirstName = (fullName) => {
