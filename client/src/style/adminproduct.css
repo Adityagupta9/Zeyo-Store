@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 20px;
   width: 100%;
   flex-grow: 1;
@@ -149,11 +149,12 @@ p.prod-shipping{
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    width: 190px;
+    width: 180px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     min-height: 339px;
     max-height: 350px;
+    margin: 0px;
   }
   .img-box {
     display: flex;
