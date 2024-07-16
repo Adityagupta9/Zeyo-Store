@@ -71,6 +71,7 @@ const ProductDetails = () => {
         <h4>SimilarProduct</h4>
         <p>{similarprod?.length<1?'No similar Product':`${similarprod?.length} similar product`}</p>
       <div className="similar-product">
+        <div className="product-cards-container">
         {similarprod.map((s)=>(
           <div onClick={()=>navigate(`/product/${s.slug}`)} className="product-card" key={s._id}>
             {s.bestSale && (
@@ -93,6 +94,7 @@ const ProductDetails = () => {
                 </div>
           </div>
         ))}
+      </div>
       </div>
       </div>
       </div>

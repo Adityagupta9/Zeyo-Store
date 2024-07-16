@@ -103,12 +103,13 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0px;
   }
   .similar-product{
     text-align:left;
     justify-content: center;
     display: flex;
+    margin-bottom: 50px;
   }
 
   @media only screen and (max-width: 600px) {
