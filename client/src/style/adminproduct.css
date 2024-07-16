@@ -149,12 +149,12 @@ p.prod-shipping{
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    width: 180px;
+    width: 175px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     min-height: 339px;
     max-height: 350px;
-    margin: 0px;
+    margin: 4px;
   }
   .img-box {
     display: flex;
