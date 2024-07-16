@@ -60,7 +60,7 @@ const Login = () => {
                     <span className='show-icon' onClick={togglePasswordVisibility}>{showPassword ? <VscEye /> : <VscEyeClosed />}</span>
                 </div>
                 <button type='submit'>Login</button>
-                <p>New user? <span><NavLink to="/signin">Create Account</NavLink></span></p>
+                <p>New user? <span><NavLink to="/signup">Create Account</NavLink></span></p>
                 <p><span><NavLink to="/forgotpassword">Forgot Password</NavLink></span></p>
             </form>
             </div>

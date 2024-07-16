@@ -16,6 +16,7 @@ const SearchProd = () => {
             <div
               className="product-card"
               key={p._id}
+              onClick={()=>navigate(`/product/${p.slug}`)}
             >
               {p.bestSale && (
                     <p className='prod-bestSale'>Best Sale</p>
@@ -33,8 +34,6 @@ const SearchProd = () => {
                     <p className='prod-shipping'>Free Shipping</p>
                     )}
                     </div>
-                   
-                    <button onClick={()=>navigate(`/product/${p.slug}`)} className='prod-see-btn'>See More</button>
                 </div>
             </div>
           ))}
