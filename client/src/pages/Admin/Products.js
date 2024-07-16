@@ -56,7 +56,6 @@ const Products = () => {
                     <p className='prod-shipping'>Free Shipping</p>
                     )}
                     </div>
-                    <button className='prod-see-btn'>See More</button>
                     
                     
                 </div>

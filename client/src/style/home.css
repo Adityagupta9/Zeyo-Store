@@ -75,8 +75,8 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20px;
   flex-grow: 1;
+  margin-bottom: 100px;
 }
 
 .product-card {

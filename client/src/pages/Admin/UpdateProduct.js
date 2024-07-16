@@ -84,8 +84,18 @@ const UpdateProduct = () => {
         productData.append("photo", photo);
       }
       productData.append("category", category);
-      productData.append("shipping", shipping);
-      productData.append("bestSale", bestSale);
+      productData.append("shipping", shipping ? "true" : "false");
+      productData.append("bestSale", bestSale ? "true" : "false");
+
+      console.log("productData:", {
+        name,
+        description,
+        price,
+        quantity,
+        category,
+        shipping,
+        bestSale,
+      });
 
       const { data } = await axios.put(
         `https://valiant-sore-tennis.glitch.me/api/v1/product/update-product/${id}`,
@@ -173,22 +183,22 @@ const UpdateProduct = () => {
               border={false}
               placeholder="Shipping"
               size='large'
-              onChange={(value) => setShipping(value)}
+              onChange={(value) => setShipping(value === "Yes")}
               value={shipping ? "Yes" : "No"}
             >
-              <Option value={true}>Yes</Option>
-              <Option value={false}>No</Option>
+              <Option value="Yes">Yes</Option>
+              <Option value="No">No</Option>
             </Select>
 
             <Select
               border={false}
               placeholder="Best Sale"
               size='large'
-              onChange={(value) => setBestSale(value)}
+              onChange={(value) => setBestSale(value === "Yes")}
               value={bestSale ? "Yes" : "No"}
             >
-              <Option value={true}>Yes</Option>
-              <Option value={false}>No</Option>
+              <Option value="Yes">Yes</Option>
+              <Option value="No">No</Option>
             </Select>
             <button type='submit' className='create-product-btn'>Update Product</button>
             <button type='button' onClick={handleDelete} className='create-product-btn'>Delete Product</button>

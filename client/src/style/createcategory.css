@@ -1,4 +1,9 @@
 .category-table {
+  margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -18,7 +23,7 @@
   }
   
   .category-table th {
-    background-color: #aa69ff;
+    background-color: #1c1649;
     color: #ffffff;
   }
   
@@ -39,7 +44,7 @@
   @media only screen and (max-width: 600px) {
     .category-table {
       position: relative;
-      left: 7%;
+      top: 30px;
     }
     .category-table table{
       width: 350px;

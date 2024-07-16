@@ -42,7 +42,7 @@ const Header = () => {
     setCategoryDropdownOpen(!categoryDropdownOpen);
     setTimeout(() => {
       setCategoryDropdownOpen(false);
-    }, 3000);
+    }, 4000);
   };
 
   const getFirstName = (fullName) => {
