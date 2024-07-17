@@ -26,8 +26,8 @@ const Login = () => {
             const res = await axios.post("https://valiant-sore-tennis.glitch.me/api/v1/auth/login", { email, password });
             if (res.data.success) {
                 setTimeout(()=>{
-                    toast.success("Logedin Successfully")
-                    },500)
+                    toast.success("Login Successfully")
+                    },700)
                 setAuth({
                     ...auth,
                     user:res.data.user,
